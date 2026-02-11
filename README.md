@@ -66,7 +66,7 @@ Once the server is running, you can access the interactive API documentation (Sw
 When deploying to Render, use the following **Start Command**:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port $PORT
+uvicorn backend.main:app --host 0.0.0.0 --port $PORT
 ```
 
 Ensure your Root Directory is set to `backend` (if deploying monorepo) or just root if deploying the backend repo separately.

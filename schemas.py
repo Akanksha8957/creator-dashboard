@@ -1,7 +1,7 @@
 from pydantic import BaseModel, EmailStr, Field
 from typing import Optional, List, Dict, Any
 from datetime import datetime
-from .models import UserRole
+from backend.models import UserRole
 from beanie import PydanticObjectId
 
 # Token

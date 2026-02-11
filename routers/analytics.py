@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
-import models, schemas, crud, auth
-from services import analytics_engine
+from backend import models, schemas, crud, auth
+from backend.services import analytics_engine
 from beanie import PydanticObjectId
 
 router = APIRouter(
