@@ -20,11 +20,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Creator Analytics Dashboard API", lifespan=lifespan)
 
 # CORS Configuration
-origins = [
-    "http://localhost:3000", # Next.js frontend
-    "http://localhost:8000",
-    "https://creatoranalytics.vercel.app", # Production Vercel URL
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
