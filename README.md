@@ -60,5 +60,16 @@ Once the server is running, you can access the interactive API documentation (Sw
 -   `main.py`: Entry point for the FastAPI application.
 -   `routers/`: Contains API route definitions (e.g., `analytics.py`, `auth.py`, `creators.py`).
 -   `services/`: Business logic and data processing services.
+
+## Production Deployment (Render)
+
+When deploying to Render, use the following **Start Command**:
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port $PORT
+```
+
+Ensure your Root Directory is set to `backend` (if deploying monorepo) or just root if deploying the backend repo separately.
+
 -   `models.py`: Database models (SQLAlchemy/Pydantic schemas).
 -   `database.py`: Database connection configuration.

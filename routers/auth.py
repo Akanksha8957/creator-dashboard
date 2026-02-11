@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-from .. import models, schemas, crud, auth
+import models, schemas, crud, auth
 from datetime import timedelta
 
 router = APIRouter(
