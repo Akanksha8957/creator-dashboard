@@ -1,5 +1,5 @@
-from backend.models import User, Creator, Analytics
-from backend import schemas, auth
+from models import User, Creator, Analytics
+import schemas, auth
 from beanie import PydanticObjectId
 from datetime import datetime
 

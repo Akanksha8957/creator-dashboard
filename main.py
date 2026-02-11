@@ -8,8 +8,8 @@ import os
 env_path = Path(__file__).parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
-from backend.routers import auth, creators, analytics
-from backend.database import init_db
+from routers import auth, creators, analytics
+from database import init_db
 from contextlib import asynccontextmanager
 
 @asynccontextmanager

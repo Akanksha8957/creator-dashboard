@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status, UploadFile, File, Form
 from typing import List, Optional
-from backend import models, schemas, crud, auth
-from backend.services import s3_service
+import models, schemas, crud, auth
+from services import s3_service
 from beanie import PydanticObjectId
 
 router = APIRouter(
