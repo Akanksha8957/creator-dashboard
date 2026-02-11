@@ -23,7 +23,7 @@ app = FastAPI(title="Creator Analytics Dashboard API", lifespan=lifespan)
 origins = [
     "http://localhost:3000", # Next.js frontend
     "http://localhost:8000",
-    # Add production URLs here
+    "https://creatoranalytics.vercel.app", # Production Vercel URL
 ]
 
 app.add_middleware(
